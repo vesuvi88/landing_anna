@@ -1,24 +1,4 @@
-# webapp
-
-A Flutter Landing Page  
-
-<table>
-    <tr>
-        <th> Fullscreen Web View   </th>
-        <th> Reponsive Web View  </th>
-    </tr>
-    <tr>
-        <td>
-            <img src="Screen Shot 2021-01-07 at 09.21.05.png" height="">  
-        </td>
-        <td>
-            <img src="Screen Shot 2021-01-07 at 09.20.51.png" height="">
-        </td>
-    </tr>
-</table>
-
-Ref. Tutorial  
-[Flutter Web : Responsive Landing Page - Speed Code](https://www.youtube.com/watch?v=87cz-ihAJ-8)  
+## Ref. Tutorial  
 
 `$flutter build web`  
 
