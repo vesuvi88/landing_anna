@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class SubscribingDialog extends StatelessWidget {
   const SubscribingDialog({
-    Key key,
+    Key? key,
   }) : super(key: key);
 
   @override

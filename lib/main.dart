@@ -87,7 +87,7 @@ class LargeChild extends StatelessWidget {
 
 class SubscribeButton extends StatelessWidget {
   const SubscribeButton({
-    Key key,
+    Key? key,
   }) : super(key: key);
 
   @override
@@ -126,13 +126,13 @@ class SubscribeButton extends StatelessWidget {
 
 class SubTitle extends StatelessWidget {
   const SubTitle({
-    Key key,
+    Key? key,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Text(
-      "Похудей со мной, коза!",
+      "Похудей со мной, стрекоза!",
       style: TextStyle(
         fontSize: 22,
         color: Color(0xFF222222),
@@ -143,7 +143,7 @@ class SubTitle extends StatelessWidget {
 
 class Title extends StatelessWidget {
   const Title({
-    Key key,
+    Key? key,
   }) : super(key: key);
 
   @override
