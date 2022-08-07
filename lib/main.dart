@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:webapp/views/first_view/first_view.dart';
+import 'package:webapp/views/second_view/second_view.dart';
 import 'widgets/navbar.dart';
 
 void main() {
@@ -26,7 +27,7 @@ class HomePage extends StatelessWidget {
             NavBar(),
             FirstView(),
             SizedBox(height: 20),
-            FirstView(),
+            SecondView(),
             SizedBox(height: 20),
             FirstView(),
             SizedBox(height: 20),

@@ -1,4 +1,4 @@
-part of 'first_view.dart';
+part of 'second_view.dart';
 
 class SmallChild extends StatelessWidget {
   @override
@@ -12,7 +12,7 @@ class SmallChild extends StatelessWidget {
           SubTitle(),
           SizedBox(height: 20),
           Center(
-            child: Image.network(PngImages.catLady, scale: 1),
+            child: Image.network("assets/cat-lady.png", scale: 1),
           ),
           SizedBox(height: 20),
           SizedBox(

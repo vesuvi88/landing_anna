@@ -12,7 +12,7 @@ class LargeChild extends StatelessWidget {
           FractionallySizedBox(
             alignment: Alignment.centerRight,
             widthFactor: .6,
-            child: Image.network("assets/cat-lady.png", scale: .85),
+            child: Image.network(PngImages.catLady, scale: .85),
           ),
           FractionallySizedBox(
             alignment: Alignment.centerLeft,
