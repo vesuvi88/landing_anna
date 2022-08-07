@@ -5,22 +5,27 @@ class SmallChild extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 40),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: <Widget>[
-          const StyledTitle(),
-          const SubTitle(),
-          const SizedBox(height: 20),
-          Center(
-            child: Image.network(PngImages.catLady),
-          ),
-          const SizedBox(height: 20),
-          const SizedBox(
-            height: 50,
-            width: double.infinity,
-            child: StyledButton(),
-          ),
-        ],
+      child: SizedBox(
+        height: 200,
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            const Expanded(
+              child: Text(
+                'Подпишись на меня в Инстаграм и оставайся на связи',
+                style: TextStyle(fontSize: 16),
+              ),
+            ),
+            const SizedBox(width: 20),
+            IconButton(
+              iconSize: 60,
+              onPressed: () {
+                launchUrl(Uri.parse('https://instagram.com/_anna.garanina_'));
+              },
+              icon: SvgPicture.network(SvgIcons.instagramIcon),
+            ),
+          ],
+        ),
       ),
     );
   }
