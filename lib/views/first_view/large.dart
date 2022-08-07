@@ -18,11 +18,11 @@ class LargeChild extends StatelessWidget {
             alignment: Alignment.centerLeft,
             widthFactor: .6,
             child: Padding(
-              padding: EdgeInsets.only(left: 48),
+              padding: const EdgeInsets.only(left: 48),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 mainAxisAlignment: MainAxisAlignment.center,
-                children: <Widget>[
+                children: const <Widget>[
                   StyledTitle(),
                   SizedBox(height: 20),
                   SubTitle(),

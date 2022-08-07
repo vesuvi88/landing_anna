@@ -1,4 +1,4 @@
-name: webapp
+name: landing_anna
 description: A Flutter Landing Page
 
 publish_to: "none"
@@ -19,6 +19,8 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+
+  very_good_analysis: ^3.0.1
 
 flutter:
   uses-material-design: true

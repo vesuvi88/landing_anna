@@ -2,13 +2,13 @@ import 'package:flutter/material.dart';
 
 class StyledTitle extends StatelessWidget {
   const StyledTitle({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
-    return Text(
-      "Анна Гаранина",
+    return const Text(
+      'Анна Гаранина',
       style: TextStyle(
         fontSize: 60,
         fontWeight: FontWeight.bold,

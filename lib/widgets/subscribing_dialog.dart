@@ -2,35 +2,33 @@ import 'package:flutter/material.dart';
 
 class SubscribingDialog extends StatelessWidget {
   const SubscribingDialog({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
     return Center(
       child: Dialog(
         child: Container(
-          constraints: BoxConstraints(maxWidth: 460),
+          constraints: const BoxConstraints(maxWidth: 460),
           color: Colors.white,
-          padding: EdgeInsets.all(20),
+          padding: const EdgeInsets.all(20),
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
-              Text(
+              const Text(
                 'Подпишись на рассылку и получай бесплатные тренировки',
                 textAlign: TextAlign.center,
                 style: TextStyle(fontSize: 28),
               ),
-              SizedBox(height: 20),
-              TextField(
+              const SizedBox(height: 20),
+              const TextField(
                 decoration: InputDecoration(
                   labelText: 'Почта',
-                  border: OutlineInputBorder(
-                    borderSide: BorderSide(),
-                  ),
+                  border: OutlineInputBorder(),
                 ),
               ),
-              SizedBox(height: 20),
+              const SizedBox(height: 20),
               SizedBox(
                 height: 50,
                 width: double.infinity,
@@ -40,7 +38,7 @@ class SubscribingDialog extends StatelessWidget {
                   onPressed: () {
                     Navigator.of(context).pop();
                   },
-                  child: Text(
+                  child: const Text(
                     'Подписаться',
                     style: TextStyle(
                       color: Colors.white,

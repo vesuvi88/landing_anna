@@ -9,11 +9,11 @@ class LargeChild extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Text(
+          const Text(
             'Подпишись на меня в Инстаграм и оставайся на связи',
             style: TextStyle(fontSize: 16),
           ),
-          SizedBox(width: 20),
+          const SizedBox(width: 20),
           IconButton(
             iconSize: 60,
             onPressed: () {

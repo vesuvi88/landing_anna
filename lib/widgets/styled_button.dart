@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:webapp/widgets/subscribing_dialog.dart';
+import 'package:landing_anna/widgets/subscribing_dialog.dart';
 
 class StyledButton extends StatelessWidget {
   const StyledButton({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
     return TextButton(
       style: ButtonStyle(
         backgroundColor: MaterialStateProperty.all(Colors.transparent),
-        side: MaterialStateProperty.all(BorderSide()),
+        side: MaterialStateProperty.all(const BorderSide()),
         shape: MaterialStateProperty.all(
             RoundedRectangleBorder(borderRadius: BorderRadius.circular(20))),
       ),
@@ -19,7 +19,7 @@ class StyledButton extends StatelessWidget {
         showDialog(
           context: context,
           builder: (_) {
-            return SubscribingDialog();
+            return const SubscribingDialog();
           },
         );
       },
@@ -30,7 +30,7 @@ class StyledButton extends StatelessWidget {
         ),
         child: Text(
           'Подписаться'.toUpperCase(),
-          style: TextStyle(
+          style: const TextStyle(
             fontSize: 16,
             color: Colors.green,
           ),

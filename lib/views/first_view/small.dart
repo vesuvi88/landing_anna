@@ -4,18 +4,18 @@ class SmallChild extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.symmetric(horizontal: 40),
+      padding: const EdgeInsets.symmetric(horizontal: 40),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
-          StyledTitle(),
-          SubTitle(),
-          SizedBox(height: 20),
+          const StyledTitle(),
+          const SubTitle(),
+          const SizedBox(height: 20),
           Center(
-            child: Image.network(PngImages.catLady, scale: 1),
+            child: Image.network(PngImages.catLady),
           ),
-          SizedBox(height: 20),
-          SizedBox(
+          const SizedBox(height: 20),
+          const SizedBox(
             height: 50,
             width: double.infinity,
             child: StyledButton(),

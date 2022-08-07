@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:landing_anna/svg_icons.dart';
+import 'package:landing_anna/utils/responsive_layout.dart';
+import 'package:landing_anna/widgets/styled_button.dart';
+import 'package:landing_anna/widgets/subtitle.dart';
+import 'package:landing_anna/widgets/title.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:webapp/svg_icons.dart';
-import 'package:webapp/utils/responsiveLayout.dart';
-import 'package:webapp/widgets/styled_button.dart';
-import 'package:webapp/widgets/subtitle.dart';
-import 'package:webapp/widgets/title.dart';
 
 part 'large.dart';
 part 'small.dart';
 
 class SecondView extends StatelessWidget {
-  const SecondView({Key? key}) : super(key: key);
+  const SecondView({super.key});
 
   @override
   Widget build(BuildContext context) {

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:webapp/views/first_view/first_view.dart';
-import 'package:webapp/views/second_view/second_view.dart';
-import 'widgets/navbar.dart';
+import 'package:landing_anna/views/first_view/first_view.dart';
+import 'package:landing_anna/views/second_view/second_view.dart';
+import 'package:landing_anna/widgets/navbar.dart';
 
 void main() {
   runApp(
@@ -25,13 +25,13 @@ class HomePage extends StatelessWidget {
         child: Column(
           children: <Widget>[
             NavBar(),
-            FirstView(),
-            SizedBox(height: 20),
-            SecondView(),
-            SizedBox(height: 20),
-            FirstView(),
-            SizedBox(height: 20),
-            FirstView(),
+            const FirstView(),
+            const SizedBox(height: 20),
+            const SecondView(),
+            const SizedBox(height: 20),
+            const FirstView(),
+            const SizedBox(height: 20),
+            const FirstView(),
           ],
         ),
       ),
